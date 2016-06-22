@@ -1,0 +1,115 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/entrega_Id"
+            style="@style/titulo"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/entrega_Descricao"
+            style="@style/titulo"
+            android:layout_toRightOf="@id/entrega_Id" />
+
+        <TextView
+            android:id="@+id/entrega_LabelRetirada"
+            style="@style/subtitulo"
+            android:layout_below="@id/entrega_Id"
+            android:text="@string/data_retirada" />
+
+        <TextView
+            android:id="@+id/entrega_DtRetirada"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/entrega_Id"
+            android:layout_toRightOf="@id/entrega_LabelRetirada" />
+
+        <TextView
+            android:id="@+id/entrega_LabelEntrega"
+            style="@style/subtitulo"
+            android:layout_below="@id/entrega_LabelRetirada"
+            android:text="@string/data_entrega" />
+
+        <TextView
+            android:id="@+id/entrega_DtEntrega"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/entrega_DtRetirada"
+            android:layout_toRightOf="@id/entrega_LabelEntrega" />
+
+        <TextView
+            android:id="@+id/entrega_LabelLocalRetirada"
+            style="@style/subtitulo"
+            android:layout_below="@id/entrega_DtEntrega"
+            android:text="@string/local_retirada" />
+
+        <TextView
+            android:id="@+id/entrega_LocalRetirada"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/entrega_DtEntrega"
+            android:layout_toRightOf="@id/entrega_LabelLocalRetirada" />
+
+        <TextView
+            android:id="@+id/entrega_LabelLocalEntrega"
+            style="@style/subtitulo"
+            android:layout_below="@id/entrega_LabelLocalRetirada"
+            android:text="@string/local_entrega" />
+
+        <TextView
+            android:id="@+id/entrega_LocalEntrega"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/entrega_LabelLocalRetirada"
+            android:layout_toRightOf="@id/entrega_LabelLocalEntrega" />
+
+        <ImageButton
+            android:id="@+id/entrega_btnRoute"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/image_margin_end"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_map_route_24dp" />
+
+        <ImageButton
+            android:id="@+id/entrega_btnAceitar"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/image_margin_end"
+            android:layout_marginTop="@dimen/image_margin_end"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_below="@id/entrega_btnRoute"/>
+
+        <ImageButton
+            android:id="@+id/entrega_btnCancelar"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/image_margin_end"
+            android:layout_marginTop="@dimen/image_margin_end"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cancel_24dp"
+            android:layout_below="@id/entrega_btnRoute"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

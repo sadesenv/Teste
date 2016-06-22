@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Expresso Movel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+
+    <string-array name="TpVeiculo">
+        <item>Motocicleta</item>
+        <item>Automovel</item>
+        <item>Caminhão</item>
+        <item>Outros</item>
+    </string-array>
+    <string name="title_activity_mapa">Rota de Entrega</string>
+    <string name="entregador">Entregador</string>
+    <string name="cliente">Cliente</string>
+    <string name="nome">Nome</string>
+    <string name="endereco">Endereço</string>
+    <string name="bairro">Bairro</string>
+    <string name="cidade">Cidade</string>
+    <string name="telefone">Telefone</string>
+    <string name="email">Email</string>
+    <string name="checkbox_entregador">Deseja ser um entregador?</string>
+    <string name="tipo_de_veiculo">Tipo de Veiculo</string>
+    <string name="placa">Placa</string>
+    <string name="salvar">Salvar</string>
+    <string name="destino">Destino:</string>
+    <string name="local_retirada">Local Retirada:</string>
+    <string name="local_entrega">Local Entrega:</string>
+    <string name="data_entrega">Data Entrega:</string>
+    <string name="data_retirada">Data Retirada:</string>
+    <string name="descricao">Descrição:</string>
+    <string name="title_activity_cadastrar_item">CadastrarItemActivity</string>
+    <string name="pedido_entregador">Entregador:</string>
+    <string name="cancelar_title">Cancelar Entrega</string>
+    <string name="cancelar_msg">Deseja cancelar esta entrega?</string>
+    <string name="aceitar_tittle">Aceitar Entrega</string>
+    <string name="aceitar_msg">Deseja aceitar esta entrega?</string>
+</resources>

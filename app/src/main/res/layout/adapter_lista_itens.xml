@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/fab_margin">
+
+        <TextView
+            android:id="@+id/pedido_Id"
+            style="@style/titulo"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/pedido_Descricao"
+            style="@style/titulo"
+            android:layout_toRightOf="@id/pedido_Id" />
+
+        <TextView
+            android:id="@+id/pedido_LabelRetirada"
+            style="@style/subtitulo"
+            android:layout_below="@id/pedido_Id"
+            android:text="@string/data_retirada" />
+
+        <TextView
+            android:id="@+id/pedido_DtRetirada"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/pedido_Id"
+            android:layout_toRightOf="@id/pedido_LabelRetirada" />
+
+        <TextView
+            android:id="@+id/pedido_tvLabelEntrega"
+            style="@style/subtitulo"
+            android:layout_below="@id/pedido_LabelRetirada"
+            android:text="@string/data_entrega" />
+
+        <TextView
+            android:id="@+id/pedido_DtEntrega"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/pedido_DtRetirada"
+            android:layout_toRightOf="@id/pedido_tvLabelEntrega" />
+
+        <TextView
+            android:id="@+id/pedido_LabelLocalRetirada"
+            style="@style/subtitulo"
+            android:layout_below="@id/pedido_DtEntrega"
+            android:text="@string/local_retirada" />
+
+        <TextView
+            android:id="@+id/pedido_LocalRetirada"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/pedido_DtEntrega"
+            android:layout_toRightOf="@id/pedido_LabelLocalRetirada" />
+
+        <TextView
+            android:id="@+id/pedido_LabelLocalEntrega"
+            style="@style/subtitulo"
+            android:layout_below="@id/pedido_LabelLocalRetirada"
+            android:text="@string/local_entrega" />
+
+        <TextView
+            android:id="@+id/pedido_LocalEntrega"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/pedido_LabelLocalRetirada"
+            android:layout_toRightOf="@id/pedido_LabelLocalEntrega" />
+
+        <TextView
+            android:id="@+id/pedido_LabelEntregador"
+            style="@style/subtitulo"
+            android:layout_below="@id/pedido_LocalEntrega"
+            android:text="@string/pedido_entregador"/>
+
+        <TextView
+            android:id="@+id/pedido_Entregador"
+            style="@style/AppTheme.texto.card"
+            android:layout_below="@id/pedido_LocalEntrega"
+            android:layout_toRightOf="@id/pedido_LabelEntregador" />
+
+        <ImageButton
+            android:id="@+id/pedido_btnEdit"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/image_margin_end"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/pedido_btnCancelar"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/image_margin_end"
+            android:layout_marginTop="@dimen/image_margin_end"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_cancel_24dp"
+            android:layout_below="@id/pedido_btnEdit"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

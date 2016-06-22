@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.geral"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".CadastrarUsuarioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/cadastrar_nome"
+                style="@style/AppTheme.input"
+                android:gravity="top"
+                android:hint="@string/nome" />
+
+            <EditText
+                android:id="@+id/cadastrar_endereco"
+                style="@style/AppTheme.input"
+                android:hint="@string/endereco" />
+
+            <EditText
+                android:id="@+id/cadastrar_bairro"
+                style="@style/AppTheme.input"
+                android:hint="@string/bairro" />
+
+            <EditText
+                android:id="@+id/cadastrar_cidade"
+                style="@style/AppTheme.input"
+                android:hint="@string/cidade" />
+
+            <EditText
+                android:id="@+id/cadastrar_telefone"
+                style="@style/AppTheme.input"
+                android:hint="@string/telefone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/cadastrar_email"
+                style="@style/AppTheme.input"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <Switch
+                android:id="@+id/cadastrar_tipo_perfil"
+                style="@style/AppTheme.input"
+                android:onClick="tipoPerfil"
+                android:text="@string/checkbox_entregador" />
+
+            <TextView
+                android:id="@+id/tipoVeiculo"
+                style="@style/AppTheme.input"
+                android:text="@string/tipo_de_veiculo"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoVeiculo"
+                style="@style/AppTheme.input"
+                android:entries="@array/TpVeiculo"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/placa"
+                style="@style/AppTheme.input"
+                android:hint="@string/placa"
+                android:inputType="text"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
