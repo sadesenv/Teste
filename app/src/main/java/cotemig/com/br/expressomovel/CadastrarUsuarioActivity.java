@@ -77,37 +77,6 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(itemMenu);
     }
 
-    public void Salvar(View view) {
-
-        Usuario usuario = formHelper.getUsuarioFromForm();
-
-        UsuarioDAO dao = new UsuarioDAO(this);
-
-        if (usuario.getIdUsuario() != null) {
-            dao.atualiza(usuario);
-            Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getTipoPerfil() + " atualizado", Toast.LENGTH_SHORT).show();
-        } else {
-            dao.insere(usuario);
-            Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getTipoPerfil() + " cadastrado", Toast.LENGTH_SHORT).show();
-        }
-
-        Intent i;
-
-        if ("N".equals(usuario.getTipoPerfil())) {
-            i = new Intent(CadastrarUsuarioActivity.this, ListarItensActivity.class);
-            CadastrarUsuarioActivity.this.startActivity(i);
-        } else {
-            i = new Intent(CadastrarUsuarioActivity.this, ListarEntregasActivity.class);
-            CadastrarUsuarioActivity.this.startActivity(i);
-        }
-
-
-        finish();
-
-
-
-    }
-
     public void tipoPerfil(View view) {
         formHelper.ocultaComponentes();
     }
