@@ -51,10 +51,10 @@ public class CadastrarUsuarioActivity extends AppCompatActivity {
 
                 if (usuario.getIdUsuario() != null) {
                     dao.atualiza(usuario);
-                    Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getTipoPerfil() + " atualizado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getNome() + " atualizado!", Toast.LENGTH_SHORT).show();
                 } else {
                     dao.insere(usuario);
-                    Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getTipoPerfil() + " cadastrado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastrarUsuarioActivity.this, "Usuário " + usuario.getNome() + " cadastrado!", Toast.LENGTH_SHORT).show();
                 }
 
                 Intent i;

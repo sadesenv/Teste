@@ -58,7 +58,7 @@ public class CadastrarItemActivity extends AppCompatActivity {
                     item.setIdCliente(userDao.getId());
 
                     dao.insere(item);
-                    Toast.makeText(CadastrarItemActivity.this, "Item " + item.getIdCliente() + " cadastrado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastrarItemActivity.this, "Item " + item.getDescricao() + " cadastrado", Toast.LENGTH_SHORT).show();
                 }
 
                 finish();

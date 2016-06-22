@@ -87,7 +87,7 @@ public class ListarItensActivity extends AppCompatActivity {
 
                 Usuario usuario = dao.getDadosCadastrais();
 
-                Toast.makeText(ListarItensActivity.this, "Alterar perfil de " + usuario.getTipoPerfil(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListarItensActivity.this, "Alterar perfil de " + usuario.getNome(), Toast.LENGTH_SHORT).show();
 
                 intent.putExtra("usuario", usuario);
 
@@ -117,10 +117,6 @@ public class ListarItensActivity extends AppCompatActivity {
         ItemDAO dao = new ItemDAO(this);
         this.itens.clear();
         this.itens = dao.getListaItensCliente(getIdUsuario());
-
-        for (Item i : itens){
-            Toast.makeText(ListarItensActivity.this, "idCliente " + i.getIdCliente(), Toast.LENGTH_SHORT).show();
-        }
 
         itemAdapter = new ListarItensAdapter(ListarItensActivity.this, itens);
 

@@ -72,7 +72,7 @@ public class ListarEntregasActivity extends AppCompatActivity {
 
                 Usuario usuario = dao.getDadosCadastrais();
 
-                Toast.makeText(ListarEntregasActivity.this, "Alterar perfil de " + usuario.getTipoPerfil(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListarEntregasActivity.this, "Alterar perfil de " + usuario.getNome(), Toast.LENGTH_SHORT).show();
 
                 intent.putExtra("usuario", usuario);
 
